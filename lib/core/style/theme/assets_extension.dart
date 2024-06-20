@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../images/app_images.dart';
 
 class MyAssets extends ThemeExtension<MyAssets> {
   const MyAssets({
@@ -35,13 +34,4 @@ class MyAssets extends ThemeExtension<MyAssets> {
       homeBg: homeBg,
     );
   }
-
-  // static const MyAssets dark = MyAssets(
-  //   // bigNavBar: AppImages.bigIconNavBarDark,
-  //   // homeBg: AppImages.homeBgDark,
-  // );
-  // static const MyAssets light = MyAssets(
-  //   bigNavBar: AppImages.bigIconNavBarLight,
-  //   homeBg: AppImages.homeBgLight,
-  // );
 }
