@@ -6,6 +6,9 @@ class AppImages {
   static const location = 'assets/images/features/Vector.png';
   static const home = 'assets/images/features/home.png';
   static const profile = 'assets/images/features/user.png';
+  static const slider = 'assets/images/features/Slider.png';
+  static const addToCart = 'assets/images/features/Group 65.png';
+
 
   static const notification = 'assets/images/features/notification.png';
   static const Horizontal_Slider = 'assets/images/features/Horizontal-Slider-2--Streamline-Flex.svg.png';

@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:slash/core/extensions/context_extension.dart';
-import 'package:slash/core/style/images/app_images.dart';
 import 'package:slash/core/utils/adaptive_layout_widget.dart';
-import 'package:slash/core/utils/size_config.dart';
 import 'package:slash/features/home_layout/presntation/view/mobile_view/home_moblie.dart';
-import 'package:slash/features/home_layout/presntation/view/web_view/custom_drawer.dart';
+import 'package:slash/features/home_layout/presntation/view/web_view/home_web.dart';
 
 class HomeLayout extends StatefulWidget {
   const HomeLayout({super.key});
@@ -18,6 +15,10 @@ class _HomeLayoutState extends State<HomeLayout> {
 
   @override
   Widget build(BuildContext context) {
-    return HomeMobile();
+    return AdaptiveLayout(
+      mobileLayout: (context) => HomeMobile(),
+      tabletLayout: (context) => HomeWeb(),
+      desktopLayout: (context) => HomeWeb(),
+    );
   }
 }

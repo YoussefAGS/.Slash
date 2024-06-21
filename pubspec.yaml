@@ -33,15 +33,18 @@ dependencies:
 
   #core
   get_it: ^7.6.7
+  connectivity_plus: ^5.0.2
+  device_preview: ^1.1.0
+
+
 
   #UI
   animate_do: ^3.3.2
   fluttertoast: ^8.2.4
   flutter_svg: ^2.0.9
   flutter_animate: ^4.5.0
-  persistent_bottom_nav_bar: ^5.0.2
-  persistent_bottom_nav_bar_v2: ^5.2.3
-  bottom_navbar_with_indicator: ^0.0.9
+  carousel_slider: ^4.2.1
+  cached_network_image: ^3.3.1
 
 
 
@@ -99,7 +102,10 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/images/features/
-
+linter:
+  rules:
+    - avoid_print
+    - lines_longer_than_80_chars: false
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
